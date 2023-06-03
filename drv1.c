@@ -98,15 +98,6 @@ static int __init moduleInit(void)
     memset(&hookWrite, 0, sizeof(struct kprobe));
     memset(&hookRead, 0, sizeof(struct kprobe));
 
-    unsigned long *sys_call_table;
-    sys_call_table = kallsyms_lookup_name("sys_call_table");
-
-    if(sys_call_table == 0) {
-
-        printk(KERN_ERR "Failed to get system call table\n%d", ret);
-        return ret;
-    }
-
     unsigned long syscall_open;
     unsigned long syscall_write;
     unsigned long syscall_read;
