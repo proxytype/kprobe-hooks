@@ -43,3 +43,5 @@ remove the module
 ```
 sudo rmmod drv1
 ```
+
+use dmesg to see kernel messages from this module.
