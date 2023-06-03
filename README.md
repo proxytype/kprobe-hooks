@@ -32,3 +32,14 @@ static int setPointers(unsigned long * syscall_open, unsigned long * syscall_wri
 ## Usage:
 develop under ubuntu 18.04. 
 kernel version: 5.4.0
+
+use makefile to compile the module,
+installing the module:
+```
+sudo insmod drv1.ko
+```
+
+remove the module
+```
+sudo rmmod drv1
+```
