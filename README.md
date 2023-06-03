@@ -1,4 +1,4 @@
-# Kprobe Hooks
+# Kprobes Hooks
 Kprobes is a mechanism used to hook system call functions within the kernel using a defined structure, making it versatile and flexible. To enhance the explanation, let's rephrase and expand upon the steps involved:
 
 Kprobes is a powerful mechanism in the Linux kernel that enables us to intercept system call functions using a standardized structure, making it universally applicable. The first step in using kprobes is to locate the table that contains the addresses of all the system calls. Luckily, Linux provides us with a convenient header file called "unistd.h" which defines all the known exported functions.
