@@ -1,7 +1,7 @@
 #include "drv1.h"
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Your Name");
+MODULE_AUTHOR("Proxytype");
 
 static int preHandler(struct kprobe *p, struct pt_regs *regs)
 {
